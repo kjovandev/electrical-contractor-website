@@ -1,9 +1,12 @@
 import React from "react";
-
+import Navbar from "./Navbar";
 const About = () =>{
     return(
+        <div className="mainDivAbout" >
+            <Navbar />
 
-        <h1>About page is rendered</h1>
+        </div>
+        
     )
 }
 
