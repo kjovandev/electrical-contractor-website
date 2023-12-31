@@ -3,7 +3,7 @@ import React from "react";
 const About = () =>{
     return(
 
-        <h1>About page is rendered really </h1>
+        <h1>About page is rendered</h1>
     )
 }
 
