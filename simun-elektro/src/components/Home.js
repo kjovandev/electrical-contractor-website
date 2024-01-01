@@ -1,8 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
+import ResponsiveNavbar from "./Navbar";
 import { Button, Card, Image } from "react-bootstrap";
 import { ButtonGroup } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css"
+import MovingImage from "./MovingImg";
 
 
 const Home = () =>{
@@ -11,20 +12,21 @@ const Home = () =>{
 
         <div className="bodyDiv " > 
 
-            <div className="navbarDiv">
-                <Navbar />
-            </div>
+            <ResponsiveNavbar />
 
-            <div className="headerContent">
-                <h1>Naslov</h1>
-                <p className=""> random text</p>
-                    <Button className="" > dugme</Button>
-                    
-                    <Image src="./logo.png" className="rounded float-right" style={{justifyContent:"space-between"}}></Image>
-            </div>
+            {/* IMPORTING IMAGES FROM /resources/img1.jpg  as a prop in MovingImage  */}
+            <div className="movingImage" ><MovingImage imageSource="/resources/img9.jpg" /></div>
+            <div className="randomDiv" style={{height:"500px", width:"100%", backgroundColor:"purple", zIndex:"2"}}> asdasd</div>
+            <div className="movingImage" ><MovingImage imageSource="/resources/img9.jpg"  style={{top:"-200px"}}/></div>
+            {/* popraviti poziciju slike */}
+            
+            <div className="randomDiv" style={{height:"500px", width:"100%", backgroundColor:"purple", zIndex:"2"}}> asdasd</div>
+
+            
             
         
         </div>
+        
 
     )
 }

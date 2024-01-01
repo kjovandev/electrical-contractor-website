@@ -4,9 +4,14 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import './App.css'
-
+import { Nav } from "react-bootstrap";
 function App() {
+
+
   return (
+
+
+ 
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -15,7 +20,7 @@ function App() {
 
       </Routes>
     </Router>
-  );
+ );
 }
 
 export default App;

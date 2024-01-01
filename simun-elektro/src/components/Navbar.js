@@ -1,96 +1,33 @@
-import React from "react";
-import { Image } from "react-bootstrap";
+import React from 'react';
+import { Navbar, Container, Nav, Image } from 'react-bootstrap';
 
+const ResponsiveNavbar = () => {
+ return (
+    <Navbar className='' bg="dark"  variant="dark" expand="sm" style={{position:"fixed", top:"0", width:"100%", zIndex:"1000000", padding:"0.3rem", paddingRight:"1rem"}} >
+      <Container style={{minWidth:"100%"}} >
+        <Navbar.Brand href="/">
+          <Image
+            src="/resources/img2.jpg"
+            alt="Logo"
+            style={{ maxHeight: '100%',
+            maxWidth: '100%',
+            height:"60px",
+            width:"70px" }}
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" style={{display:"flex", justifyContent:"flex-end"}} >
+          {/* POPRAVITI JUSTIFY CONTENT ILI SLICNO DA PREDJE NA DESNU STRANU */}
+          <Nav className="me-auto">
+            <Nav.Link className="text-uppercase text-white fs-7 fw-bold" href="/">Početna</Nav.Link>
+            <Nav.Link className="text-uppercase text-white fs-7 fw-bold"  href="/about">O nama</Nav.Link>
+            <Nav.Link className="text-uppercase text-white fs-7 fw-bold"  href="/contact">Kontakt</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+ );
+};
 
-
-
-function Navbar() {
-
-  return(
-
-<nav class="navbar navbar-expand-sm navbar-dark bg-black px-3" style={{justifyContent:"space-between"}} >
-<Image src="./logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo" />  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link mx-3 text-light" 
-        style={{
-          fontWeight: "600",
-          fontStyle: "normal",
-          fontSize: "15px",
-          letterSpacing: "0.1em",
-          textTransform: "uppercase"
-        }}
-        
-        href="/">Početna</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-3 text-light" 
-
-        style={{
-          fontWeight: "600",
-          fontStyle: "normal",
-          fontSize: "15px",
-          letterSpacing: "0.1em",
-          textTransform: "uppercase"
-        }}
-
-        href="/about">O nama</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mx-3 text-light" 
-        
-        style={{
-          fontWeight: "600",
-          fontStyle: "normal",
-          fontSize: "15px",
-          letterSpacing: "0.1em",
-          textTransform: "uppercase"
-        }}
-
-        href="/contact">Kontakt</a>
-      </li>
-   
-    </ul>
-  </div>
-</nav>
-  )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-export default Navbar;
-
-
-
+export default ResponsiveNavbar;
 
