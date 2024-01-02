@@ -1,31 +1,51 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import './styles.css';
+import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 const Footer = () => {
- return (
-    <footer style={{backgroundColor:"black", padding:"1rem", margin:"0"}}>
+  const phoneNumber = "069-13-23-645"; 
+  const instagramLink = "https://www.instagram.com/simun.elektroinstalation/"; 
+  
+
+  const handleCallUsClick = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
+  return (
+    <footer className="footer mt-5" style={{color:"white"}}>
       <Container>
-        <Row>
-          <Col className="footer-col">
-            <h5>About Us</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <Row >
+        <Col md={4} style={{padding:"1rem"}}>
+          <Button variant="success" onClick={handleCallUsClick} style={{backgroundColor:"green", height:"3rem", width:"7rem"}}>
+              Pozovi
+            </Button></Col>
+          <Col md={4}>
+            <h5>Contact Info</h5>
+            <p>Address: Your Address</p>
+            <p>Email: your.email@example.com</p>
           </Col>
-          <Col className="footer-col">
-            <h5>Contact Us</h5>
-            <p>Phone: +1 (123) 456-7890</p>
-            <p>Email: contact@example.com</p>
+          <Col md={4}>
+            <h5>Follow Us</h5>
+            <a href={instagramLink} target="_blank" rel="noopener noreferrer">
+              <img src="/resources/instagram.png" alt="Instagram Logo" width="30" height="30" />
+              @simun.elektroinstalation
+            </a>
+            
           </Col>
-          <Col className="footer-col">
-            <h5>Social Media</h5>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          
+        </Row>
+        <Row className="mt-3">
+          <Col>
+            <p className="text-center">
+              &copy; 2023 Simun Elektroinstalation | Designed and Developed by{" "}
+              <a href="https://github.com/kjovandev" target="_blank" rel="noopener noreferrer">
+                kjovandev
+              </a>
+            </p>
           </Col>
         </Row>
       </Container>
     </footer>
- );
+  );
 };
 
 export default Footer;

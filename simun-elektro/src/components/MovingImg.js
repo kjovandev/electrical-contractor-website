@@ -1,38 +1,27 @@
 // MovingImg.js
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Image from 'react-bootstrap/Image';
 import "./styles.css";
 
-const MovingImage = ({ contentOverImage, imageSource, initialTopPosition = 0 }) => {
-  const backgroundImageRef = useRef(null);
 
+const MovingImage = (props) => {
+  
+  
+  let [image, setImage] = useState(props.imageList[0])
+  let index = 0
   useEffect(() => {
-    const handleScroll = () => {
-      const viewportHeight = window.innerHeight;
-      const elementTop = backgroundImageRef.current.getBoundingClientRect().top;
-      const translation = Math.max(0, Math.min(viewportHeight - elementTop, viewportHeight) * 0.5);
+    const img = document.querySelector(".ImgMainDiv")
+    const interval = setInterval(() => {
+      index++
+      index = index % props.imageList.length
+      setImage(props.imageList[index])
 
-      const backgroundImage = backgroundImageRef.current;
-      if (backgroundImage) {
-        backgroundImage.style.transform = `translateY(${translation}px)`;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    }, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="movingImgMainDiv">
-      <div className="contentOverovingImg">
-        <p>{contentOverImage}</p>
-      </div>
-      <div className='movingImgDiv' ref={backgroundImageRef} style={{ top: `${initialTopPosition}px` }}>
-        <Image className='movingImg' src={imageSource} alt="image 1"></Image>
-      </div>
-    </div>
+      <img className="ImgMainDiv" src={image} />
   );
 };
 
