@@ -14,10 +14,10 @@ const Home2 = () => {
       const scrolled = window.scrollY;
       
 
-      document.querySelector(".parallaxMainDiv").style.backgroundPositionY = `${-250 + scrolled * 0.5}px`;
-      document.querySelector(".parallaxMainDiv2").style.backgroundPositionY = `${scrolled * 0.5}px`;
-      document.querySelector(".parallaxMainDiv3").style.backgroundPositionY = `${scrolled * 0.5}px`;
-      document.querySelector(".parallaxMainDiv4").style.backgroundPositionY = `${scrolled * 0.5}px`;
+      document.querySelector(".parallaxMainDiv").style.backgroundPositionY = `${-600 + scrolled * 0.5}px`;
+      document.querySelector(".parallaxMainDiv2").style.backgroundPositionY = `${150+ scrolled * 0.2}px`;
+      document.querySelector(".parallaxMainDiv3").style.backgroundPositionY = `${100 + scrolled * 0.2}px`;
+      document.querySelector(".parallaxMainDiv4").style.backgroundPositionY = `${scrolled * 0.2}px`;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -31,28 +31,45 @@ const Home2 = () => {
   return (
     <div className="mainDiv">
       <ResponsiveNavbar />
-      <div className="parallaxMainDiv slika" style={{ backgroundImage: `url(/resources/img5.jpg)`, backgroundPositionY:"-250px"  }}>
+      <div className="parallaxMainDiv slika" style={{ backgroundImage: `url(/resources/img16.jpg)`, backgroundPositionY:"-600px"  }}>
         <div className="headerContent" >
-            <h1>Lorem Ipsum </h1> 
+            <h1>SIMUN</h1>
+            <h2>ELEKTROINSTALATION</h2>
+            <h3>sinonim za kvalitet</h3> 
         </div>
       </div>
       <div className="noImageDiv">
-        <div style={{width : '100px', height: '100px'}}>
-            {/* <MovingImage imageList={["/resources/img6.jpg", "/resources/img7.jpg", "/resources/img8.jpg"]} /> */}
-        </div>
+        
         <div className="rollingContent">
           <p>noImageDiv content noImageDiv content noImageDiv content</p>
         </div>
       </div>
-      <div className="parallaxMainDiv2 slika" style={{ backgroundImage: `url(/resources/img6.jpg)` }}>
-        {/* Content goes here */}
+      <div className="parallaxMainDiv2 slika" style={{ backgroundImage: `url(/resources/img6.jpg)`,backgroundPositionY:"150px" }}>
+      
+      <div className="pic2contentDiv">
+        <p>Lorem Ipsum LOrem lroe asddas 
+          <br/>
+          akorem jedan dva tri cetri pet sest</p>
       </div>
-      <div className="parallaxMainDiv3 slika" style={{ backgroundImage: `url(/resources/img5.jpg)` }}>
-        {/* Content goes here */}
+      
+      </div>
+      <div className="parallaxMainDiv3 slika" style={{ backgroundImage: `url(/resources/img14.jpg)`,backgroundPositionY:"100px" }}>
+      
+      <div className="pic2contentDiv">
+        <p>Lorem Ipsum LOrem lroe asddas 
+          <br/>
+          akorem jedan dva tri cetri pet sest</p>
+      </div>
+      
+      
       </div>
       <div className="parallaxMainDiv4 slika" style={{ backgroundImage: `url(/resources/img3.jpg)` }}>
-        {/* Content goes here */}
+      <div className="pic2contentDiv">
+        <p>Lorem Ipsum LOrem lroe asddas 
+          <br/>
+          akorem jedan dva tri cetri pet sest</p>
       </div>
+            </div>
       <div className="noImageDiv">
         <div className="rollingContent">
           <p>noImageDiv content noImageDiv content noImageDiv content</p>
