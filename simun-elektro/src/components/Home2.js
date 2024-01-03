@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ResponsiveNavbar from "./Navbar";
 import Footer from "./Footer";
-import "./styles.css";
+import "./home.css";
 import { Image } from "react-bootstrap";
 import MovingImage from "./MovingImg";
 
