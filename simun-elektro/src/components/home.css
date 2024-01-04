@@ -1,24 +1,83 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
+.carouselDiv {
+  width: 90%;
+  max-height: 70%; 
+   overflow: hidden; 
+}
+.noImageDivHeader
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vw;
+  
+  font-weight: 700;
+}
 
 h1 {
-  font-weight: 600;
+  line-height: 3rem;
+  
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+h2{
+  font-size: 3vw;
+  line-height: 3rem;
+  
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.first-rowH1 {
   font-size: 20vw;
-  width: auto;
+}
+.second-rowH1 {
+  font-size: 6vw;
 }
 
-h2 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+/* .invertedTextHome{
+  border-radius: 0.8rem;
+  margin: 2vw;
+  font-size: 4vw;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  color:  rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px; 
+  display: inline-block;
+} */
+
+.invertedTextHome {
+  color: white;
+  margin: 2vw;
   font-size: 7vw;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+.textPic3{
+  background-color:rgba(0, 0, 0, 0.8) ;
 }
 
-h3 {
-  font-weight: 600;
-}
+
+/* .invertedText {
+  background-color: black;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  background-clip: text;
+ne radi!!!!!!!!!!
+} */
 
 .parallaxMainDiv
  {
@@ -35,7 +94,9 @@ h3 {
 
 .parallaxMainDiv2,
 .parallaxMainDiv3,
-.parallaxMainDiv4 {
+.parallaxMainDiv4,
+.parallaxMainDiv5,
+.parallaxMainDiv6 {
   position: relative;
   height: 50vh;
   width: auto;
@@ -55,14 +116,17 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height:auto;
   width: auto;
   border-radius: 10px;
-  /* border: 0.01rem solid black; */
+  padding: 1rem;
   background: transparent;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(4px);
 }
 
+.textPic6{
+  color: black;
+}
 
 .ImgMainDiv {
   width: 100%;
@@ -79,7 +143,9 @@ h3 {
   }
   .parallaxMainDiv2,
   .parallaxMainDiv3,
-  .parallaxMainDiv4{
+  .parallaxMainDiv4,
+  .parallaxMainDiv5,
+  .parallaxMainDiv6{
     height: 100vh;
     width: 100%;
     display: flex;
@@ -95,20 +161,38 @@ h3 {
   {
     justify-content: left;
   }
-  h1 {
-    height: 37vh;
-    width: auto;
-    letter-spacing: 2rem;
+  .parallaxMainDiv5
+  {
+    justify-content: right;
   }
 
-  h2 {
-    font-size: 6vw;
+  .parallaxMainDiv6{
+    justify-content: left;
   }
+  .textPic6{
+    margin: 14rem;
 
+  }
+ 
+  .first-rowH1 {
+    font-size: 15vw;
+  }
+  .second-rowH1 {
+    font-size: 4vw;
+  }
+ 
   .headerContent {
-    width: 80%;
-    backdrop-filter: blur(6px);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: 24rem;
+    backdrop-filter: blur(3px);
   }
+  .invertedTextHome
+{
+  font-size: 5vw;
+}
 }
 
 .noImageDiv {
@@ -117,6 +201,11 @@ h3 {
   width: 100%;
   z-index: 1;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .rollingContent {
@@ -127,6 +216,7 @@ h3 {
   text-align: center;
   color: white;
 }
+
 
 .footer {
   background-color: black;

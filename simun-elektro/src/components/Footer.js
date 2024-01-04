@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer mt-5" style={{color:"white"}}>
+    <footer className="footer " style={{color:"white"}}>
       <Container>
         <Row >
         <Col md={4} style={{padding:"1rem"}}>

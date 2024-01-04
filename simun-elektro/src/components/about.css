@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Oswald&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
 
 
 
@@ -9,19 +10,20 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+  .aboutImage{
+    height: 70vh;
+    width: auto;
+  }
+  .aboutImageDiv
+  {
+      margin: 2rem;
+      height: auto;
+      width: auto;
+  }
 
-  h2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 7vw;
-  }
+
   
-  h3 {
-    font-weight: 600;
-  }
-  
-  .parallaxMainDiv
+  .about-parallaxMainDiv
    {
     font-family: 'Libre Bodoni', serif;
 
@@ -36,9 +38,9 @@ body {
     align-items: center;
   }
   
-  .parallaxMainDiv2,
-  .parallaxMainDiv3,
-  .parallaxMainDiv4 {
+  .about-parallaxMainDiv2,
+  .about-parallaxMainDiv3,
+  .about-parallaxMainDiv4 {
     position: relative;
     height: 50vh;
     width: auto;
@@ -51,7 +53,7 @@ body {
   }
   
   
-  .headerContent {
+  .about-headerContent {
     font-size: 5vw;
     color: white;
     display: flex;
@@ -63,61 +65,67 @@ body {
     border-radius: 10px;
     /* border: 0.01rem solid black; */
     background: transparent;
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
   }
   
   
-  .ImgMainDiv {
+  .about-ImgMainDiv {
     width: 100%;
     height: 100%;
   }
   
   @media screen and (min-width: 768px) {
-    .parallaxMainDiv {
+    .about-parallaxMainDiv {
       height: 100vh;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    .parallaxMainDiv2,
-    .parallaxMainDiv3,
-    .parallaxMainDiv4{
+    .about-parallaxMainDiv2,
+    .about-parallaxMainDiv3,
+    .about-parallaxMainDiv4{
       height: 100vh;
       width: 100%;
       display: flex;
       align-items: center;
     }
-    .parallaxMainDiv2{
+    .about-parallaxMainDiv2{
       justify-content: left;
     }
-    .parallaxMainDiv3{
+    .about-parallaxMainDiv3{
       justify-content: right;
     }
-    .parallaxMainDiv4
+    .about-parallaxMainDiv4
     {
       justify-content: left;
     }
   
-    h2 {
-      font-size: 6vw;
-    }
-  
-    .headerContent {
+    .about-headerContent {
       width: 80%;
-      backdrop-filter: blur(6px);
+      /* backdrop-filter: blur(6px); */
+
+    }
+    .about-noImageDiv {
+      
+      flex-direction: column;
     }
   }
   
-  .noImageDiv {
+
+  .about-noImageDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
     position: relative;
-    height: 100vh;
+    height: auto;
     width: 100%;
     z-index: 1;
     background-color: white;
   }
   
-  .rollingContent {
+  .about-rollingContent {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -142,4 +150,5 @@ body {
   .footer-col a {
     color: white;
   }
-  
+  .aboutContent
+  {}
