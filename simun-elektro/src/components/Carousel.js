@@ -2,41 +2,38 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function CarouselBootstrap() {
   return (
-    <Carousel data-bs-theme="dark" className="d-flex align-items-center justify-content-center" style={{ height: "60vh", width: "80mw" }}>
-      <Carousel.Item className='mw-100 h-auto align-items-center justify-content-center'>
+      <Carousel>
+      <Carousel.Item style={{ width: 'auto', height: '70vh',maxHeight:"100%"}}>
         <img
-          className="d-block mw-100 mh-100 "
-          src="/resources/delta.webp"
-          alt="Delta Holding"
-          style={{maxHeight:"100%", width:"auto"}}
+          src='/resources/gazprom.jpg'
+          style={{ width: 'auto', height: '100%', maxWidth: '100%', maxHeight: '100%' }}
+          alt='First slide'
         />
         <Carousel.Caption>
-          <h5>Delta Holding</h5>
-          <p>Projektovanje i izrada instalacija u Delta planet-u u Nišu.</p>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item className='mh-100 w-100 align-items-center justify-content-center'>
+      <Carousel.Item style={{ width: '50vw', height: '100%',maxHeight:"100%"}}>
         <img
-          className="d-block mw-100 mh-100"
-          src="/resources/delta.webp"
-          alt="Gazprom"
+          src='/resources/belgrade.jpg'
+          style={{ width: 'auto', height: '100%', maxWidth: '100%', maxHeight: '100%' }}
+          alt='Second slide'
         />
-        <Carousel.Caption>
-          <h5>Gazprom</h5>
-          <p>Izrada elektro-instalacija u zgradi administracije u Beogradu.</p>
+        <Carousel.Caption style={{ color: 'white', backgroundColor: 'black' }}>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item className='mw-100 h-auto align-items-center justify-content-center'>
+      <Carousel.Item style={{ width: '50vw', height: '100%',maxHeight:"100%"}}>
         <img
-          className="d-block mw-100 mh-100"
-          src="/resources/delta.webp"
-          alt="Belgrade Waterfront"
+          src='/resources/belgrade.jpg'
+          style={{ width: 'auto', height: '100%', maxWidth: '100%', maxHeight: '100%' }}
+          alt='Third slide'
         />
         <Carousel.Caption>
-          <h5 style={{ margin: "2rem", backgroundColor: "white" }}>Belgrade Waterfront</h5>
-          <p>
-            Projektovanje i izrada IOT instalacija.
-          </p>
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

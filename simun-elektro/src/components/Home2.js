@@ -49,7 +49,7 @@ const Home2 = () => {
       <div className="noImageDiv">
         <p className="noImageDivHeader">Naši Partneri </p>
         <div className="carouselDiv">
-        <CarouselBootstrap />
+        <CarouselBootstrap style={{outerHeight:"400px", outerWidth:"100%"}} />
 
         </div>
       </div>
@@ -94,7 +94,8 @@ const Home2 = () => {
       <div className="pic2contentDiv  ">
       <p className="invertedTextHome textPic6 ">
           <br/>
-          Tako i u Vašem domu.</p>
+          Tako i u <br/>
+          Vašem domu.</p>
       </div>
             </div>
 

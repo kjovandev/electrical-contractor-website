@@ -8,9 +8,10 @@ body {
   padding: 0;
 }
 .carouselDiv {
-  width: 90%;
-  max-height: 70%; 
-   overflow: hidden; 
+  padding: 1rem;
+  margin: 1rem;
+  height: 400px;
+  width:"100%" 
 }
 .noImageDivHeader
 {
@@ -170,7 +171,7 @@ ne radi!!!!!!!!!!
     justify-content: left;
   }
   .textPic6{
-    margin: 14rem;
+    margin: 25vw;
 
   }
  
