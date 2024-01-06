@@ -1,154 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Oswald&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
 
-
-
 body {
-    font-family: 'Libre Bodoni', serif;
+  font-family: 'Libre Bodoni', serif;
+  margin: 0;
+  padding: 0;
+}
 
-    margin: 0;
-    padding: 0;
-  }
-  .aboutImage{
-    height: 70vh;
-    width: auto;
-  }
-  .aboutImageDiv
-  {
-      margin: 2rem;
-      height: auto;
-      width: auto;
-  }
+.imageAbout {
+  height: 70vh;
+  width: auto;
+}
 
+.imageDivAbout {
+  margin: 2rem;
+  height: auto;
+  width: auto;
+}
 
-  
-  .about-parallaxMainDiv
-   {
-    font-family: 'Libre Bodoni', serif;
+.parallaxMainDivAbout {
+  font-family: 'Libre Bodoni', serif;
+  position: relative;
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    position: relative;
+.headerContentAbout {
+  font-size: 5vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+}
+
+.imgMainDivAbout {
+  width: 100%;
+  height: 100%;
+}
+
+.contentDivAbout {
+padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .parallaxMainDivAbout {
     height: 100vh;
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .about-parallaxMainDiv2,
-  .about-parallaxMainDiv3,
-  .about-parallaxMainDiv4 {
-    position: relative;
-    height: 50vh;
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    z-index: 0;
-    display: flex;
-    align-items: center;
+
+  .headerContentAbout {
+    width: 80%;
   }
-  
-  
-  .about-headerContent {
-    font-size: 5vw;
-    color: white;
+
+  .noImageDivAbout {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: auto;
-    border-radius: 10px;
-    /* border: 0.01rem solid black; */
-    background: transparent;
-    /* backdrop-filter: blur(3px); */
-  }
-  
-  
-  .about-ImgMainDiv {
-    width: 100%;
-    height: 100%;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .about-parallaxMainDiv {
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .about-parallaxMainDiv2,
-    .about-parallaxMainDiv3,
-    .about-parallaxMainDiv4{
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      align-items: center;
-    }
-    .about-parallaxMainDiv2{
-      justify-content: left;
-    }
-    .about-parallaxMainDiv3{
-      justify-content: right;
-    }
-    .about-parallaxMainDiv4
-    {
-      justify-content: left;
-    }
-  
-    .about-headerContent {
-      width: 80%;
-      /* backdrop-filter: blur(6px); */
-
-    }
-    .about-noImageDiv {
-      
-      flex-direction: column;
-    }
-  }
-  
-
-  .about-noImageDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:center;
     position: relative;
     height: auto;
     width: 100%;
     z-index: 1;
     background-color: white;
   }
-  
-  .about-rollingContent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
+
+  .noImageDivAboutLarge {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
-  
-  .footer {
-    background-color: black;
-    padding: 2rem;
-    bottom: 0;
-    z-index: 400000;
+  .contentDivAbout {
+    max-width: 50vw;
   }
-  
-  .footer-col h5 {
-    font-weight: bold;
-    color: white;
-  }
-  
-  .footer-col p,
-  .footer-col a {
-    color: white;
-  }
-  .aboutContent
-  {}
+}
+
+.footer {
+  background-color: black;
+  padding: 2rem;
+  bottom: 0;
+  z-index: 400000;
+}
+
+.footer-col h5 {
+  font-weight: bold;
+  color: white;
+}
+
+.footer-col p,
+.footer-col a {
+  color: white;
+}

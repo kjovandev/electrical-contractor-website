@@ -11,7 +11,7 @@ const AboutPage = () => {
       const scrolled = window.scrollY;
       
 
-      document.querySelector(".about-parallaxMainDiv").style.backgroundPositionY = `${-600 + scrolled * 0.5}px`;
+      document.querySelector(".parallaxMainDivAbout").style.backgroundPositionY = `${-600 + scrolled * 0.5}px`;
        };
 
     window.addEventListener("scroll", handleScroll);
@@ -23,43 +23,47 @@ const AboutPage = () => {
 
 
   return (
-    <div className="about-mainDiv">
+    <div className="mainDivAbout">
+      
       <ResponsiveNavbar />
-      <div className="about-parallaxMainDiv slika" style={{ backgroundImage: `url(/resources/img17.jpg)`, backgroundPositionY:"-600px"  }}>
-        <div className="about-headerContent" >
-            <p className="aboutHeader">Upoznajte SIMUNOV Tim</p>
+      
+      <div className="parallaxMainDivAbout slikaAbout" style={{ backgroundImage: `url(/resources/img17.jpg)`, backgroundPositionY:"-600px"  }}>
+        <div className="headerContentAbout" >
+            <p className="headerAbout">Upoznajte SIMUNOV Tim</p>
              
         </div>
       </div>
-      <div className="about-noImageDiv">
-        <div className="aboutContentDiv">
+      
+      <div className="noImageDivAbout noImageDivAboutLarge">
+        <div className="contentDivAbout">
 
-        <p className="aboutContent">
-          "Simun Elektroinstalation", sa sedištem u Nišu, predstavlja uglednu električarsku <br/>
-        firmu sa trogodišnjim iskustvom, a u vlasništvu je stručnjaka u oblasti električnih <br/>
-        instalacija, gospodina Nikole Ilića. Sa posvećenim timom od pet članova, firma se <br/>
-        ističe pružanjem visokokvalitetnih električarskih usluga na stambenim i industrijskim<br/>
-        objektima.
-        </p>
-        
-        <p className="aboutContent">
-        Nikola Ilić, kao vlasnik, donosi stručnost i liderstvo u poslovanje "Simun Elektroinstalation". <br/>
-        Firma se ponosi brzim odgovorom na klijentske zahteve, tačnošću u izvršenju projekata i poštovanjem najviših standarda <br/>
-        kvaliteta.
-        </p>
+          <p className="contentAbout">
+            "Simun Elektroinstalation", sa sedištem u Nišu, predstavlja uglednu električarsku 
+          firmu sa trogodišnjim iskustvom, a u vlasništvu je stručnjaka u oblasti električnih 
+          instalacija, gospodina Nikole Ilića. Sa posvećenim timom od pet članova, firma se 
+          ističe pružanjem visokokvalitetnih električarskih usluga na stambenim i industrijskim
+          objektima.
+          </p>
+          <hr/>
+          <p className="contentAbout">
+          Nikola Ilić, kao vlasnik, donosi stručnost i liderstvo u poslovanje "Simun Elektroinstalation".
+          Firma se ponosi brzim odgovorom na klijentske zahteve, tačnošću u izvršenju projekata i poštovanjem najviših standarda 
+          kvaliteta.
+          </p>
+          <hr/>
+          <p className="contentAbout">
+          Sa pažljivim pristupom svakom projektu, "Simun Elektroinstalation" pruža sveobuhvatne usluge instalacija, od novogradnje 
+          do održavanja sistema. Nikola Ilić i njegov tim su posvećeni zadovoljenju potreba klijenata, prateći najnovije tehnološke
+          trendove i garantujući sigurnost i efikasnost u svakom aspektu električarskih radova.
+          </p>
 
-        <p className="aboutContent">
-        Sa pažljivim pristupom svakom projektu, "Simun Elektroinstalation" pruža sveobuhvatne usluge instalacija, od novogradnje <br/>
-        do održavanja sistema. Nikola Ilić i njegov tim su posvećeni zadovoljenju potreba klijenata, prateći najnovije tehnološke <br/>
-        trendove i garantujući sigurnost i efikasnost u svakom aspektu električarskih radova.
-</p>
         </div>
-        <div className="aboutImageDiv" >
-          <img className="aboutImage" src="/resources/people.jpg" />
+
+        <div className="imageDivAbout" >
+          <img className="imageAbout" src="/resources/people.jpg" />
         </div>
         
       </div>
-     
       
       <Footer />
     </div>

@@ -1,19 +1,21 @@
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
-body {
+
+body 
+{
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
-.carouselDiv {
+
+.carouselDivHome 
+{
   padding: 1rem;
   margin: 1rem;
   height: 400px;
   width:"100%" 
 }
-.noImageDivHeader
+
+.noImageDivHeaderHome
 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3vw;
@@ -21,41 +23,36 @@ body {
   font-weight: 700;
 }
 
-h1 {
+h1 
+{
   line-height: 3rem;
   
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
-h2{
+
+h2
+{
   font-size: 3vw;
   line-height: 3rem;
   
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
-.first-rowH1 {
+
+.first-rowH1Home 
+{
   font-size: 20vw;
 }
-.second-rowH1 {
+
+.second-rowH1Home
+{
   font-size: 6vw;
 }
 
-/* .invertedTextHome{
-  border-radius: 0.8rem;
-  margin: 2vw;
-  font-size: 4vw;
-  font-family: 'Montserrat', sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  color:  rgba(0, 0, 0, 0.8);
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 10px; 
-  display: inline-block;
-} */
-
-.invertedTextHome {
+.invertedTextHome
+{
   color: white;
   margin: 2vw;
   font-size: 7vw;
@@ -63,24 +60,13 @@ h2{
   font-style: italic;
   font-weight: 400;
 }
-.textPic3{
+
+.textPic3Home
+{
   background-color:rgba(0, 0, 0, 0.8) ;
 }
 
-
-/* .invertedText {
-  background-color: black;
-  background-size: cover;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-family: 'Montserrat', sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  background-clip: text;
-ne radi!!!!!!!!!!
-} */
-
-.parallaxMainDiv
+.parallaxMainDivHome
  {
   position: relative;
   height: 100vh;
@@ -93,11 +79,12 @@ ne radi!!!!!!!!!!
   align-items: center;
 }
 
-.parallaxMainDiv2,
-.parallaxMainDiv3,
-.parallaxMainDiv4,
-.parallaxMainDiv5,
-.parallaxMainDiv6 {
+.parallaxMainDivHome2,
+.parallaxMainDivHome3,
+.parallaxMainDivHome4,
+.parallaxMainDivHome5,
+.parallaxMainDivHome6
+{
   position: relative;
   height: 50vh;
   width: auto;
@@ -109,8 +96,8 @@ ne radi!!!!!!!!!!
   align-items: center;
 }
 
-
-.headerContent {
+.headerContentHome
+{
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -125,64 +112,83 @@ ne radi!!!!!!!!!!
   backdrop-filter: blur(4px);
 }
 
-.textPic6{
+.textPic6Home
+{
   color: black;
 }
 
-.ImgMainDiv {
+.ImgMainDivHome
+{
   width: 100%;
   height: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .parallaxMainDiv {
+
+@media screen and (min-width: 768px) 
+{
+
+  .parallaxMainDivHome
+  {
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .parallaxMainDiv2,
-  .parallaxMainDiv3,
-  .parallaxMainDiv4,
-  .parallaxMainDiv5,
-  .parallaxMainDiv6{
+
+  .parallaxMainDivHome2,
+  .parallaxMainDivHome3,
+  .parallaxMainDivHome4,
+  .parallaxMainDivHome5,
+  .parallaxMainDivHome6
+  {
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
   }
-  .parallaxMainDiv2{
-    justify-content: left;
-  }
-  .parallaxMainDiv3{
-    justify-content: right;
-  }
-  .parallaxMainDiv4
+
+  .parallaxMainDivHome2
   {
     justify-content: left;
   }
-  .parallaxMainDiv5
+
+  .parallaxMainDivHome3
   {
     justify-content: right;
   }
 
-  .parallaxMainDiv6{
+  .parallaxMainDivHome4
+  {
     justify-content: left;
   }
-  .textPic6{
+
+  .parallaxMainDivHome5
+  {
+    justify-content: right;
+  }
+
+  .parallaxMainDivHome6
+  {
+    justify-content: left;
+  }
+  
+  .textPic6Home
+  {
     margin: 25vw;
-
   }
  
-  .first-rowH1 {
+  .first-rowH1Home
+  {
     font-size: 15vw;
   }
-  .second-rowH1 {
+  .second-rowH1Home
+  {
     font-size: 4vw;
   }
  
-  .headerContent {
+  .headerContentHome
+  {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -196,7 +202,8 @@ ne radi!!!!!!!!!!
 }
 }
 
-.noImageDiv {
+.noImageDivHome
+{
   position: relative;
   height: 100vh;
   width: 100%;
@@ -209,7 +216,8 @@ ne radi!!!!!!!!!!
 
 }
 
-.rollingContent {
+.rollingContentHome
+{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -219,19 +227,22 @@ ne radi!!!!!!!!!!
 }
 
 
-.footer {
+.footer
+{
   background-color: black;
   padding: 2rem;
   bottom: 0;
   z-index: 400000;
 }
 
-.footer-col h5 {
+.footer-col h5
+{
   font-weight: bold;
   color: white;
 }
 
 .footer-col p,
-.footer-col a {
+.footer-col a
+{
   color: white;
 }

@@ -1,0 +1,22 @@
+.mainContentContact {
+margin-top: 60px;
+padding-top:1rem ;
+padding-bottom: 2rem;
+
+}
+
+.mainDivContact{
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col h5 {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .footer-col p,
+  .footer-col a {
+    color: white;
+  }
+  
