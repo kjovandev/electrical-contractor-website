@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ResponsiveNavbar from "./Navbar";
 import Footer from "./Footer";
@@ -6,13 +6,13 @@ import "./home.css";
 import CarouselBootstrap from "./Carousel";
 
 
-let parallaxMainDivInitalYPos
 
 const Home = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY;
       
+      // to do : for each loop for the function and export
 
       document.querySelector(".parallaxMainDivHome").style.backgroundPositionY = `${-600 + scrolled * 0.5}px`;
       document.querySelector(".parallaxMainDivHome2").style.backgroundPositionY = `${-250+ scrolled * 0.2}px`;
@@ -48,7 +48,6 @@ const Home = () => {
         </div>
       
       </div>
-      
 
       <div className="noImageDivHome">
         <p className="noImageDivHeaderHome">Naši Partneri </p>

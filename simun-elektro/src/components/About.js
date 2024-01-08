@@ -9,9 +9,7 @@ const AboutPage = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY;
-      
-
-      document.querySelector(".parallaxMainDivAbout").style.backgroundPositionY = `${-600 + scrolled * 0.5}px`;
+        document.querySelector(".parallaxMainDivAbout").style.backgroundPositionY = `${-600 + scrolled * 0.5}px`;
        };
 
     window.addEventListener("scroll", handleScroll);
@@ -30,7 +28,6 @@ const AboutPage = () => {
       <div className="parallaxMainDivAbout slikaAbout" style={{ backgroundImage: `url(/resources/img17.jpg)`, backgroundPositionY:"-600px"  }}>
         <div className="headerContentAbout" >
             <p className="headerAbout">Upoznajte SIMUNOV Tim</p>
-             
         </div>
       </div>
       
